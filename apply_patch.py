@@ -23,8 +23,8 @@ for week in range(start, 9):
         skip = False
     else:
         filename = 'week{}/{}'.format(week, to_patch)
-        call('git checkout {}'.format(filename), shell=True)
+#        call('git checkout {}'.format(filename), shell=True)
         call('patch -p1 {} < {}'.format(filename, patch), shell=True)
     filename = 'week{}/complete/{}'.format(week, to_patch)
-    call('git checkout {}'.format(filename), shell=True)
+#    call('git checkout {}'.format(filename), shell=True)
     call('patch -p1 {} < {}'.format(filename, patch), shell=True)
