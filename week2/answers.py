@@ -72,21 +72,21 @@ Find the following point additions on the curve  \\( y^2 = x^3 + 7: F_{223} \\)
 >>> additions = ((192, 105, 17, 56), (47, 71, 117, 141), (143, 98, 76, 66))
 >>> # iterate over the additions to be done
 >>> for x1_raw, y1_raw, x2_raw, y2_raw in additions:  #/
-...    # Initialize points this way:
-...    # x1 = FieldElement(x1_raw, prime)
-...    # y1 = FieldElement(y1_raw, prime)
-...    # p1 = Point(x1, y1, a, b)
-...    # x2 = FieldElement(x2_raw, prime)
-...    # y2 = FieldElement(y2_raw, prime)
-...    # p2 = Point(x2, y2, a, b)
-...    x1 = FieldElement(x1_raw, prime)  #/
-...    y1 = FieldElement(y1_raw, prime)  #/
-...    p1 = Point(x1, y1, a, b)  #/
-...    x2 = FieldElement(x2_raw, prime)  #/
-...    y2 = FieldElement(y2_raw, prime)  #/
-...    p2 = Point(x2, y2, a, b)  #/
-...    # print p1+p2
-...    print('{} + {} = {}'.format(p1, p2, p1+p2))  #/
+...     # Initialize points this way:
+...     # x1 = FieldElement(x1_raw, prime)
+...     # y1 = FieldElement(y1_raw, prime)
+...     # p1 = Point(x1, y1, a, b)
+...     # x2 = FieldElement(x2_raw, prime)
+...     # y2 = FieldElement(y2_raw, prime)
+...     # p2 = Point(x2, y2, a, b)
+...     x1 = FieldElement(x1_raw, prime)  #/
+...     y1 = FieldElement(y1_raw, prime)  #/
+...     p1 = Point(x1, y1, a, b)  #/
+...     x2 = FieldElement(x2_raw, prime)  #/
+...     y2 = FieldElement(y2_raw, prime)  #/
+...     p2 = Point(x2, y2, a, b)  #/
+...     # print p1+p2
+...     print('{} + {} = {}'.format(p1, p2, p1+p2))  #/
 Point(192,105)_223 + Point(17,56)_223 = Point(170,142)_223
 Point(47,71)_223 + Point(117,141)_223 = Point(60,139)_223
 Point(143,98)_223 + Point(76,66)_223 = Point(47,71)_223
