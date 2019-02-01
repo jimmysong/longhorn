@@ -31,7 +31,7 @@ EXERCISE_TEMPLATE_2 = '''# Exercise {exercise_number}
 {code}'''
 
 
-for week in range(4):
+for week in range(5):
     notebook = nbformat.v4.new_notebook()
     notebook_complete = nbformat.v4.new_notebook()
     cells = notebook['cells']
