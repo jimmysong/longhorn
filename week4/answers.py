@@ -46,7 +46,7 @@ Validate the signature for the first input in this transaction.
 >>> t = Tx.parse(stream)  #/
 >>> # grab the input at index
 >>> tx_in = t.tx_ins[index]  #/
->>> # use the sig_hash method on index and hash_type to get z
+>>> # use the sig_hash method on index to get z
 >>> z = t.sig_hash(index)  #/
 >>> # combine the script_sig and script_pubkey
 >>> combined_script = tx_in.script_sig + tx_in.script_pubkey()  #/
@@ -99,7 +99,7 @@ tx:TxTest:test_sign_input:
 #exercise
 Send 0.04 TBTC to this address 
 
-`mwJn1YPMq7y5F8J3LkC5Hxg9PHyZ5K4cFv`
+`mqYz6JpuKukHzPg94y4XNDdPCEJrNkLQcv`
 
 #### Go here to send your transaction: https://live.blockcypher.com/btc-testnet/pushtx/
 ---
@@ -108,7 +108,7 @@ Send 0.04 TBTC to this address
 >>> from script import p2pkh_script
 >>> prev_tx = bytes.fromhex('0c024b9d3aa2ae8faae96603b8d40c88df2fc6bf50b3f446295206f70f3cf6ad')  #/prev_tx = bytes.fromhex('<transaction id here>')  # CHANGE
 >>> prev_index = 0  #/prev_index = -1  # CHANGE
->>> target_address = 'mwJn1YPMq7y5F8J3LkC5Hxg9PHyZ5K4cFv'
+>>> target_address = 'mqYz6JpuKukHzPg94y4XNDdPCEJrNkLQcv'
 >>> target_amount = 0.04
 >>> fee = 50000
 >>> passphrase = b'Jimmy Song'  #/passphrase = b'<your passphrase here>'  # CHANGE
