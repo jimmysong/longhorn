@@ -1,5 +1,10 @@
 import nbformat
 import re
+import sys
+
+weeks = [int(a) for a in sys.argv[1:]]
+if len(weeks) == 0:
+    weeks = range(8)
 
 
 FIRST_CELL = '''############## PLEASE RUN THIS CELL FIRST! ###################
@@ -31,7 +36,7 @@ EXERCISE_TEMPLATE_2 = '''# Exercise {exercise_number}
 {code}'''
 
 
-for week in range(5):
+for week in weeks:
     notebook = nbformat.v4.new_notebook()
     notebook_complete = nbformat.v4.new_notebook()
     cells = notebook['cells']
