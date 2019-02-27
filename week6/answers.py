@@ -29,6 +29,9 @@ b'verack\\x00\\x00\\x00\\x00\\x00\\x00'
 network:NetworkEnvelopeTest:test_parse:
 #endunittest
 #unittest
+network:NetworkEnvelopeTest:test_serialize:
+#endunittest
+#unittest
 network:GetHeadersMessageTest:test_serialize:
 #endunittest
 #unittest
